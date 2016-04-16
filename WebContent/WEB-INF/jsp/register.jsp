@@ -9,7 +9,7 @@
 <body>
 
 <h2>User Registration</h2>
-<form:form method="POST" action="/BestBookBuy/addUser">
+<form:form method="POST" action="/BestBookBuy/register">
    <table>
     <tr>
         <td><form:label path="fname">First Name</form:label></td>

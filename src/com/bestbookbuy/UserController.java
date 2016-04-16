@@ -18,9 +18,9 @@ import org.springframework.ui.ModelMap;
 @Controller
 public class UserController {
 
-	@RequestMapping(value = "/user", method = RequestMethod.GET)
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
 	public ModelAndView user() {
-		return new ModelAndView("user", "command", new User());
+		return new ModelAndView("register", "command", new User());
 	}
 
 	@RequestMapping(value = "/addUser", method = RequestMethod.POST)

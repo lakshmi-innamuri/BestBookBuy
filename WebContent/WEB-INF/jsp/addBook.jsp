@@ -12,15 +12,15 @@
 <form:form method="POST" action="/BestBookBuy/addBook">
    <table>
     <tr>
-        <td><form:label path="title">First Name</form:label></td>
+        <td><form:label path="title">Title</form:label></td>
         <td><form:input path="title" /></td>
     </tr>
     <tr>
-        <td><form:label path="isbn">Last Name</form:label></td>
+        <td><form:label path="isbn">ISBN</form:label></td>
         <td><form:input path="isbn" /></td>
     </tr>
     <tr>
-        <td><form:label path="price">Email</form:label></td>
+        <td><form:label path="price">Price</form:label></td>
         <td><form:input path="price" /></td>
     </tr>
     <tr>

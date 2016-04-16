@@ -23,13 +23,13 @@ public class UserController {
 		return new ModelAndView("register", "command", new User());
 	}
 
-	@RequestMapping(value = "/addUser", method = RequestMethod.POST)
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public String addUser(@ModelAttribute("SpringWeb") User user, ModelMap model) {
 		model.addAttribute("fname", user.getFname());
 		model.addAttribute("lname", user.getLname());
 		model.addAttribute("email", user.getEmail());
 
-		return "result";
+		return "welcome";
 	}
 	
 	@RequestMapping(value = "/addBook", method = RequestMethod.GET)
@@ -43,6 +43,6 @@ public class UserController {
 		model.addAttribute("isbn", book.getIsbn());
 		model.addAttribute("price", book.getPrice());
 
-		return "result";
+		return "bookList";
 	}
 }

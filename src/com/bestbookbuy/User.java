@@ -12,6 +12,12 @@ public class User {
 	private String lname;
 	private String email;
 	
+	//TODO check how controller can invoke constructor
+	/*public User(String fname, String lname, String email) {
+		this.fname = fname;
+		this.lname = lname;
+		this.email = email;
+	}*/
 	public String getFname() {
 		return fname;
 	}

@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>Spring MVC Form Handling</title>
+    <title>Register Best Book Buy</title>
 </head>
 <body>
 
@@ -12,20 +12,20 @@
 <form:form method="POST" action="/BestBookBuy/addUser">
    <table>
     <tr>
-        <td><form:label path="fname">Name</form:label></td>
+        <td><form:label path="fname">First Name</form:label></td>
         <td><form:input path="fname" /></td>
     </tr>
     <tr>
-        <td><form:label path="lname">Age</form:label></td>
+        <td><form:label path="lname">Last Name</form:label></td>
         <td><form:input path="lname" /></td>
     </tr>
     <tr>
-        <td><form:label path="email">id</form:label></td>
+        <td><form:label path="email">Email</form:label></td>
         <td><form:input path="email" /></td>
     </tr>
     <tr>
         <td colspan="2">
-            <input type="submit" value="Submit"/>
+            <input type="submit" value="Register"/>
         </td>
     </tr>
 </table>  

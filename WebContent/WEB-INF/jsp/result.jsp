@@ -12,15 +12,15 @@
    <table>
     <tr>
         <td>First Name</td>
-        <td>${fname}</td>
+        <td>${title}</td>
     </tr>
     <tr>
         <td>Last Name</td>
-        <td>${lname}</td>
+        <td>${isbn}</td>
     </tr>
     <tr>
         <td>EMail</td>
-        <td>${email}</td>
+        <td>${price}</td>
     </tr>
 </table>  
 </body>

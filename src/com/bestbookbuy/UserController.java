@@ -31,4 +31,18 @@ public class UserController {
 
 		return "result";
 	}
+	
+	@RequestMapping(value = "/addBook", method = RequestMethod.GET)
+	public ModelAndView addBook() {
+		return new ModelAndView("addBook", "command", new Book());
+	}
+	
+	@RequestMapping(value = "/addBook", method = RequestMethod.POST)
+	public String addBook(@ModelAttribute("SpringWeb") Book book, ModelMap model) {
+		model.addAttribute("title", book.getTitle());
+		model.addAttribute("isbn", book.getIsbn());
+		model.addAttribute("price", book.getPrice());
+
+		return "result";
+	}
 }

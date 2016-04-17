@@ -6,13 +6,12 @@
    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
    <display-name>Spring MVC Application</display-name>
-
    <servlet>
       <servlet-name>BestBookBuy</servlet-name>
       <servlet-class>
          org.springframework.web.servlet.DispatcherServlet
       </servlet-class>
-      <load-on-startup>1</load-on-startup>
+    <load-on-startup>1</load-on-startup>
    </servlet>
 
    <servlet-mapping>
@@ -20,4 +19,5 @@
       <url-pattern>/</url-pattern>
    </servlet-mapping>
  
+
 </web-app>

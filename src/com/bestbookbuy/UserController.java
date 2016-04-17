@@ -3,6 +3,8 @@
  */
 package com.bestbookbuy;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +19,16 @@ import org.springframework.ui.ModelMap;
 
 @Controller
 public class UserController {
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String index() {
+		return "index";
+	}
+	
+	@RequestMapping(value = "/home", method = RequestMethod.GET)
+	public String home() {
+		return "home";
+	}
 
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
 	public ModelAndView user() {
@@ -24,12 +36,20 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String addUser(@ModelAttribute("SpringWeb") User user, ModelMap model) {
+	public String addUser(@ModelAttribute("SpringWeb") User user, ModelMap model,HttpServletRequest request) {
+		request.getSession().setAttribute("testVariable", "Session value");
 		model.addAttribute("fname", user.getFname());
 		model.addAttribute("lname", user.getLname());
 		model.addAttribute("email", user.getEmail());
+		try {
+			DBInterface db = new DBInterface();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 
-		return "welcome";
+		return "home";
 	}
 	
 	@RequestMapping(value = "/addBook", method = RequestMethod.GET)
@@ -45,4 +65,6 @@ public class UserController {
 
 		return "bookList";
 	}
+	
+	
 }

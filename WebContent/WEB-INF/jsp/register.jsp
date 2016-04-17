@@ -25,7 +25,7 @@
     </tr>
     <tr>
         <td colspan="2">
-            <input type="submit" value="Register"/>
+            <input type="submit" value="Register Here"/>
         </td>
     </tr>
 </table>  

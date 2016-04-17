@@ -7,13 +7,11 @@
 <title>Welcome to Best Book Buy</title>
 </head>
 <body>
+<%@ include file="header.jsp"%>
 
-	<h2>${fname}is Registered!!</h2>
 
-	<div>
-		<form:form method="GET" action="/BestBookBuy/addBook">
-			<input type="submit" value="Add Book" />
-		</form:form>
-	</div>
+
+	<h2>${fname} ${lname} is Registered!!</h2>
+
 </body>
 </html>

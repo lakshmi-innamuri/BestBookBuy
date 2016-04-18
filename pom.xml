@@ -14,11 +14,9 @@
 	<profiles>
 		<profile>
 			<id>openshift</id>
-<!-- 		<activation> -->
-<!--             <activeByDefault>false</activeByDefault> -->
-<!--         </activation> -->
-		<build>
-<!-- 			<sourceDirectory>src</sourceDirectory> -->
+
+<build>
+            <finalName>bbb</finalName>
 			<plugins>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
@@ -26,6 +24,8 @@
 					<configuration>
 						<source>1.7</source>
 						<target>1.7</target>
+						 <outputDirectory>webapp</outputDirectory>
+                        <warName>ROOT</warName>
 					</configuration>
 				</plugin>
 				<plugin>

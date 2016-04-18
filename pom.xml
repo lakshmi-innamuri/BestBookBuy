@@ -6,7 +6,7 @@
 	<artifactId>BestBookBuy</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>BestBookBuy</name>
+	<name>bbb</name>
 	<description>spring mvc </description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,6 +34,8 @@
 					<configuration>
 						<warSourceDirectory>WebContent</warSourceDirectory>
 						<failOnMissingWebXml>false</failOnMissingWebXml>
+						<outputDirectory>webapps</outputDirectory>
+                        <warName>ROOT</warName>
 					</configuration>
 				</plugin>
 			</plugins>

@@ -16,7 +16,7 @@
 
 	<!--2. Controller- it exists in the above mentioned path -->
 	<!--3. View Resolver -->
-	   	<mvc:default-servlet-handler/>
+	   	
    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
       <property name="prefix" value="/WEB-INF/jsp/" />
       <property name="suffix" value=".jsp" />

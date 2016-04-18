@@ -17,7 +17,7 @@ import org.springframework.ui.ModelMap;
  *
  */
 
-@Controller
+@Controller("BestBookBuy")
 public class UserController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)

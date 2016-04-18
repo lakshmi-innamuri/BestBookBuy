@@ -41,12 +41,12 @@ public class UserController {
 		model.addAttribute("fname", user.getFname());
 		model.addAttribute("lname", user.getLname());
 		model.addAttribute("email", user.getEmail());
-		try {
-			DBInterface db = new DBInterface();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			DBInterface db = new DBInterface();
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
 
 		return "home";

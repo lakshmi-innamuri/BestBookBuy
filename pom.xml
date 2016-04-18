@@ -34,7 +34,7 @@
 					<configuration>
 						<warSourceDirectory>WebContent</warSourceDirectory>
 						<failOnMissingWebXml>false</failOnMissingWebXml>
-						<outputDirectory>webapps</outputDirectory>
+						<outputDirectory>webapp</outputDirectory>
                         <warName>ROOT</warName>
 					</configuration>
 				</plugin>

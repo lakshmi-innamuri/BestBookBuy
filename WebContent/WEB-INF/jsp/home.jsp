@@ -12,6 +12,7 @@
 
 
 	<h2>${fname} ${lname} is Registered!!</h2>
+	<h4>${email }</h4>
 
 </body>
 </html>

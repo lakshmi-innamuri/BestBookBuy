@@ -41,15 +41,20 @@ public class UserController {
 		model.addAttribute("fname", user.getFname());
 		model.addAttribute("lname", user.getLname());
 		model.addAttribute("email", user.getEmail());
-//		try {
-//			DBInterface db = new DBInterface();
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-		
-
-		return "home";
+		try {
+			DBInterface db = new DBInterface();
+			
+			model.addAttribute("lname",db.DBInterface1());
+			if(db.register(user.getFname(),user.getLname(),user.getEmail())){
+				return "home";
+			}else{
+				model.addAttribute("error","Sorry,Error during registration. Please try again.");
+				return "error";
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "error";
 	}
 	
 	@RequestMapping(value = "/addBook", method = RequestMethod.GET)

@@ -9,7 +9,7 @@
 <body>
 
 <h2>Add Book</h2>
-<form:form method="POST" action="/BestBookBuy/addBook">
+<form:form method="POST" action="/bestbookbuy/addBook">
    <table>
     <tr>
         <td><form:label path="title">Title</form:label></td>
